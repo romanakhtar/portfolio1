@@ -1,0 +1,87 @@
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  height: 4.5rem;
+}
+
+.p__section {
+  padding: 0 3rem 2rem 3rem;
+}
+
+.btn--primary {
+  border: none;
+  font-family: var(--font-poppins);
+  font-size: 1.8rem;
+  width: 18rem;
+  padding: 1.5rem 0;
+  border-radius: 1rem;
+  cursor: pointer;
+  background: linear-gradient(
+    109.6deg,
+    rgb(255, 207, 84) 11.2%,
+    rgb(255, 158, 27) 91.1%
+  );
+}
+
+.btn--primary:hover {
+  background: linear-gradient(
+    109.6deg,
+    rgb(255, 158, 27) 11.2%,
+    rgb(255, 207, 84) 91.1%
+  );
+}
+
+.linear-gradient--green {
+  background: rgb(100, 244, 172);
+  background: linear-gradient(
+    180deg,
+    rgba(100, 244, 172, 1) 0%,
+    rgba(50, 122, 86, 1) 70%
+  );
+}
+
+.-intro {
+  font-size: 1.6rem;
+  color: var(--text-green);
+  font-family: var(--font-poppins);
+  gap: 0.4rem;
+}
+
+.intro__line--graphic {
+  width: 1.8rem;
+  background-color: var(--text-green-shade);
+  height: 0.2rem;
+}
+
+.--btn-secondary_icon {
+  transform: scaleX(-1);
+}
+
+.btn--secondary {
+  margin-top: 2rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: rgb(254, 205, 26);
+  padding: 1rem;
+  gap: 1.5rem;
+  font-family: var(--font-poppins);
+  font-weight: 400;
+}
+
+.btn--secondary,
+.btn-text--secondary {
+  transition: all 0.25s ease-in;
+}
+
+.btn-text--secondary {
+  font-size: 1.5rem;
+}
+
+.btn--secondary:hover .btn-text--secondary {
+  transform: translateX(1rem);
+}

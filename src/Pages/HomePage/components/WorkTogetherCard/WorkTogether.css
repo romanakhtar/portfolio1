@@ -1,0 +1,80 @@
+.work-together {
+  background-color: var(--color-bg-secondary);
+  padding: 15rem 2rem;
+}
+
+.work-together__card {
+  position: relative;
+  width: 100%;
+  background-color: var(--color-bg-primary);
+  border-radius: 4rem;
+  flex-direction: column;
+  padding: 8rem 0rem;
+  gap: 2rem;
+  overflow: hidden;
+}
+
+.work-together__line {
+  width: 10rem;
+  height: 0.4rem;
+  background-color: var(--text-green-shade);
+}
+
+.work-together__title {
+  font-size: 5rem;
+  color: white;
+  font-family: var(--font-montserrat);
+  text-align: center;
+}
+
+.work-together__text {
+  font-size: 1.6rem;
+  color: var(--text-shaded-white);
+  font-family: var(--font-poppins);
+  width: 60%;
+  text-align: center;
+}
+
+.work-together__btn {
+}
+
+.work-together__top-circle {
+  position: absolute;
+  top: -12%;
+  left: -5%;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+}
+.work-together__bottom-circle {
+  position: absolute;
+  bottom: -20%;
+  right: -5%;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+}
+
+.work-together__bottom-inner {
+  width: 70%;
+  height: 70%;
+  background-color: var(--color-bg-primary);
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 900px) {
+  .work-together__bottom-circle,
+  .work-together__top-circle {
+    width: 15rem;
+    height: 15rem;
+  }
+  .work-together {
+    padding: 6rem 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .work-together__title {
+    font-size: 2rem;
+  }
+}

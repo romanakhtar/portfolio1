@@ -1,0 +1,100 @@
+.outerRing {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgb(100, 244, 172);
+  background: linear-gradient(
+    180deg,
+    rgba(100, 244, 172, 1) 0%,
+    rgba(50, 122, 86, 1) 70%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.innerRing {
+  width: 68%;
+  height: 68%;
+  border-radius: 50%;
+  background-color: rgb(45, 46, 50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ring1-m,
+.ring2-m,
+.ring3-m,
+.ring4-m {
+  position: absolute;
+}
+
+.ring1-m {
+  top: 6%;
+  left: 8%;
+}
+
+.ring2-m {
+  top: 6%;
+  right: 8%;
+}
+
+.ring3-m {
+  top: 42%;
+  left: -5%;
+}
+
+.ring4-m {
+  top: 42%;
+  right: -5%;
+}
+
+.ring1,
+.ring2,
+.ring3,
+.ring4 {
+  width: 7.5vw;
+  height: 7.5vw;
+  border-radius: 50%;
+  color: var(--text-green);
+  background-color: var(--color-bg-secondary);
+  z-index: 3;
+  font-size: 3.5rem;
+  font-family: var(--font-poppins);
+  font-weight: 600;
+}
+
+@media screen and (max-width: 700px) {
+  .ring1,
+  .ring2,
+  .ring3,
+  .ring4 {
+    font-size: 2rem;
+    width: 5rem;
+    height: 5rem;
+  }
+}
+@media screen and (max-width: 300px) {
+  .ring1-m {
+    top: 2%;
+    left: 4%;
+  }
+
+  .ring2-m {
+    top: 2%;
+    right: 4%;
+  }
+
+  .ring3-m {
+    top: 35%;
+    left: -3%;
+  }
+
+  .ring4-m {
+    top: 35%;
+    right: -3%;
+  }
+}

@@ -1,0 +1,138 @@
+.simple-sec__card {
+  background-color: var(--color-bg-secondary);
+  padding: 10rem 3rem;
+  gap: 4rem;
+  position: relative;
+}
+
+.flex-reverse {
+  flex-direction: row-reverse;
+}
+
+.simple-sec__details {
+  padding: 0 2rem;
+}
+
+.simple-sec__details__wrapper {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  z-index: 2;
+}
+
+.simple-sec__details-caption {
+}
+
+.simple-sec__details__wrapper h2 {
+  color: white;
+  font-family: var(--font-montserrat);
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.simple-sec__details__wrapper p {
+  font-family: var(--font-poppins);
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  color: var(--text-shaded-white);
+  margin-top: 3rem;
+}
+
+.simple-section__img-container {
+  padding: 1rem 2rem;
+}
+
+.simple-section__img-wrapper {
+  position: relative;
+  width: 45vw;
+  height: 35vw;
+}
+
+.simple-section__img-shade {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+  border-radius: 4rem;
+  z-index: 1;
+  transform: rotate(-10deg);
+  opacity: 0.5;
+}
+
+.simple-section__img-wrapper img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4rem;
+  z-index: 2;
+}
+
+.portfolio-ring-top,
+.portfolio-ring-bottom {
+  position: absolute;
+
+  z-index: 1;
+}
+.portfolio-ring-top {
+  top: -8%;
+  right: -10vw;
+}
+
+.portfolio-ring-bottom {
+  bottom: -15%;
+  left: -10vw;
+}
+
+.portfolio-ring-top__wrapper,
+.portfolio-ring-bottom__wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.portfolio-ring__ring {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}
+
+.portfolio-ring__inner {
+  background-color: var(--color-bg-secondary);
+  border-radius: 50%;
+}
+
+.ring--green {
+  background: linear-gradient(
+    180deg,
+    rgb(100, 244, 172, 1) 0%,
+    rgba(50, 122, 86, 1) 50%
+  );
+}
+
+@media screen and (max-width: 786px) {
+  .simple-sec__card {
+    flex-direction: column;
+  }
+  .flex-reverse {
+    flex-direction: column;
+  }
+  .simple-section__img-wrapper {
+    width: 80vw;
+    height: 50vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .simple-sec__details__wrapper h2 {
+    font-size: 2.4rem;
+  }
+  .simple-sec__details__wrapper p {
+    font-size: 1.4rem;
+  }
+  .simple-section__img-wrapper {
+    width: 90vw;
+    height: 60vw;
+  }
+}

@@ -1,0 +1,108 @@
+.hero-section {
+  background-color: var(--color-bg-primary);
+  color: white;
+  height: max-content;
+  padding: 2rem 2rem 0;
+}
+
+.hero__details {
+  flex: 2;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hero__details h1 {
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 8rem;
+  font-family: var(--font-montserrat);
+  font-weight: 700;
+}
+
+.hero__details p {
+  font-size: 1.5rem;
+  font-family: var(--font-poppins);
+  color: var(--text-shaded-white);
+  margin-top: 1.5rem;
+  line-height: 26px;
+}
+
+.hero__details button {
+  margin-top: 2rem;
+}
+
+.hero__img-section {
+  flex: 3;
+  position: relative;
+  padding: 3rem;
+}
+
+.ring__wrapper {
+  width: 55vw;
+  height: 55vw;
+}
+
+.person__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  top: 0;
+}
+
+.person__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 1200px) {
+  .hero__details p,
+  .hero__details button {
+    margin-top: 0px;
+  }
+
+  .hero__details {
+    padding: 1rem 0;
+  }
+
+  .hero__details h1 {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .hero__details h1 {
+    font-size: 3rem;
+  }
+  .hero__details p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .hero-section {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .hero__img-section {
+    padding: 0;
+  }
+  .ring__wrapper {
+    width: 90vw;
+    height: 90vw;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .hero__details button {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .hero-section {
+    padding: 0.4rem;
+  }
+}
